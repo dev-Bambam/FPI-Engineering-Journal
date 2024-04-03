@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FPI Engineering Journal</title>
-<link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- swiper css link -->
+
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
 </head>
 <body class="container max-w-3xl md:max-w-[100%]">
     <header class=" px-6 md:px-12 lg:px-24">
@@ -74,7 +78,8 @@
             </ul>
 
             <div class="hidden lg:block">
-                <button class=" border border-fpiGreen p-2 rounded-full px-4 font-bold text-fpiGreen hover:text-white hover:bg-fpiGreen lg:p-4 lg:px-4">
+                <button class=" border border-fpiGreen p-2 rounded-full px-4 font-bold text-fpiGreen hover:text-white hover:bg-fpiGreen lg:p-4 
+                lg:px-4">
                     Send Manuscript
                 </button>
             </div>
@@ -86,8 +91,8 @@
         </nav>
     </header>
 
-    <main class="mt-14 px-6 md:px-12 lg:px-24 max-w[10%]">
-        <section class="flex flex-col items-center space-y-16 md:flex-row md:justify-between md:space-y-0" id="hero-section">
+    <main class="mt-14 max-w[10%]">
+        <section class="flex flex-col items-center px-6 md:px-12 lg:px-24 space-y-16 md:flex-row md:justify-between md:space-y-0" id="hero-section">
             <div class="space-y-10 md:w-7/12">
                 <h1 class="text-5xl font-bold text-center md:font-extrabold md:text-left md:text-[4.6em] md:w-[110%] lg:w-[90%] ">Journal of Measurements in <span class="text-fpiGreen">Engineering</span></h1>
                 <p class="text-xl text-center md:text-left">
@@ -112,7 +117,7 @@
             </div>
         </section>
 
-        <section class="mt-10 px-8" id="about-us">
+        <section class="mt-10 md:px-24 px-8" id="about-us">
             <div class="flex flex-col-reverse gap-12 md:flex-row">
                 <div class="hidden md:block ">
                     <img src="./images/Rectangle 15.png" alt="" class="">
@@ -125,7 +130,8 @@
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus sequi dolor officia moleadipisicing elit. Veritatis quas magni, similique sint adim? Suscipit rem quia culpa dolor sitnecessitatibus molestiae, obcaecati doloremque hic adipisci aspernatur eveniet iure! Omnis, laudantium...
                     </p>
                     <div class="">
-                        <button class=" border border-fpiGreen p-2 rounded-full px-5 font-bold text-fpiGreen hover:text-white hover:bg-fpiGreen lg:p-1 lg:px-2">
+                        <button class=" border border-fpiGreen p-2 rounded-full px-5 font-bold text-fpiGreen hover:text-white hover:bg-fpiGreen 
+                        lg:p-3 lg:px-8">
                             Read more
                         </button>
                     </div>
@@ -133,11 +139,11 @@
             </div>
         </section>
 
-        <section id="articles" class="mt-9">
+        <section id="articles" class="bg-articleColor mt-9 py-20 px-6 md:px-12 lg:px-24 w-[100%]">
             <div class="">
-                <div class="flex flex-col space-y-9 md:space-y-0 md:flex-row md:justify-between">
+                <div class="flex flex-col space-y-9  md:space-y-0 md:flex-row md:justify-between">
                     <!-- Right seciton -->
-                    <div class="text-center md:text-left md:w-9/12">
+                    <div class="text-center md:text-left md:w-8/12 lg:w-8/12">
                         <div class="flex justify-between mb-10">
                             <h1 class="text-3xl font-bold">Articles</h1>
                             <p class="text-fpiGreen text-xl font-bold">
@@ -146,51 +152,51 @@
                                 </a>
                             </p>
                         </div>
-                        <div class="flex mb-8">
-                            <div class="w-4/12">
-                                <button class="text-sm border border-fpiGreen p-2 rounded-full px-5 font-bold text-fpiGreen hover:text-white hover:bg-fpiGreen lg:p-1 lg:px-2">
+                        <div class="flex mb-8 gap-3 justify-center md:w-[80%]">
+                            <div class=" md:w-full">
+                                <button class="w-full text-sm border border-fpiGreen p-2 rounded-full px-5 font-bold text-fpiGreen hover:text-white hover:bg-fpiGreen md:p-3 md:px-3 lg:p-3 lg:px-4">
                                     Editor's Pick
                                 </button>
                             </div>
-                            <div class="w-5/12">
-                                <button class="text-sm border border-fpiGreen p-2 rounded-full px-5 font-bold text-fpiGreen hover:text-white hover:bg-fpiGreen lg:p-1 lg:px-2">
+                            <div class=" md:w-full">
+                                <button class="w-full text-sm border border-fpiGreen p-2 rounded-full px-5 font-bold text-fpiGreen hover:text-white hover:bg-fpiGreen md:p-3 md:px-3 lg:p-3 lg:px-4">
                                     Recently Published
                                 </button>
                             </div>
-                            <div class="w-3/12">
-                                <button class="text-sm border border-fpiGreen p-2 rounded-full px-5 font-bold text-fpiGreen hover:text-white hover:bg-fpiGreen lg:p-1 lg:px-2">
+                            <div class=" md:w-full">
+                                <button class="w-full text-sm border border-fpiGreen p-2 rounded-full px-5 font-bold text-fpiGreen hover:text-white hover:bg-fpiGreen md:p-3 md:px-3 lg:p-3 lg:px-4">
                                     Popularity
                                 </button>
                             </div>
                         </div>
                         <div class="space-y-4">
-                            <div class="flex flex-col md:flex-row md:gap-4 lg:items-center lg:justify-center">
+                            <div class="flex flex-col md:flex-row md:items-center md:gap-4 lg:items-center">
                                 <img src="./images/Rectangle 15.png" alt="" class="hidden md:block md:w-1/3">
-                                <div class="space-y-3 md:text-sm">
+                                <div class="space-y-4 md:space-y-1 md:text-sm md:w-[55%] lg:text-[1em] lg:w-[60%] lg:space-y-2">
                                     <h1 class="text-3xl font-bold md:text-2xl">
                                         Characterization of 3D-Radar images of pavement devoid damage based on FDTD
                                     </h1>
                                     <p class="text-darkGrayishBlue">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, minus. Dignissimos minima placeat repudiandae, veritatis unde quas magni explicabo tenetur illo similique, voluptate vel laboriosam architecto id eveniet, libero error?
                                     </p>
-                                    <div class="">
-                                        <button class=" border border-fpiGreen p-2 rounded-full px-5 font-bold text-fpiGreen hover:text-white hover:bg-fpiGreen lg:p-1 lg:px-2">
+                                    <div class="lg:text-left">
+                                        <button class="font-bold text-fpiGreen hover:text-white">
                                          Read more
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col md:flex-row md:gap-4 lg:items-center lg:justify-center">
+                            <div class="flex flex-col md:flex-row md:items-center md:gap-4 lg:items-center">
                                 <img src="./images/Rectangle 15.png" alt="" class="hidden md:block md:w-1/3">
-                                <div class="space-y-3 md:text-sm">
+                                <div class="space-y-4 md:space-y-1 md:text-sm md:w-[55%] lg:text-[1em] lg:w-[60%] lg:space-y-2">
                                     <h1 class="text-3xl font-bold md:text-2xl">
                                         Characterization of 3D-Radar images of pavement devoid damage based on FDTD
                                     </h1>
                                     <p class="text-darkGrayishBlue">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, minus. Dignissimos minima placeat repudiandae, veritatis unde quas magni explicabo tenetur illo similique, voluptate vel laboriosam architecto id eveniet, libero error?
                                     </p>
-                                    <div class="">
-                                        <button class=" border border-fpiGreen p-2 rounded-full px-5 font-bold text-fpiGreen hover:text-white hover:bg-fpiGreen lg:p-1 lg:px-2">
+                                    <div class="lg:text-left">
+                                        <button class="font-bold text-fpiGreen hover:text-white">
                                          Read more
                                         </button>
                                     </div>
@@ -199,9 +205,9 @@
                         </div>
                     </div>
                     <!-- Left section -->
-                    <div class="space-y-5">
+                    <div class="space-y-5 md:w-4/12 lg:w-4/12">
                         <div class="md:text-sm">
-                            <h1 class="bg-ashWhite p-6 w-[90%] text-4xl text-center mx-auto rounded-[20px] text-fpiGreen font-bold">
+                            <h1 class="bg-fpiGreen p-4 w-[90%] text-4xl text-center mx-auto text-white font-bold">
                                 Notice Board
                             </h1>
                             <ul class="list-disc w-[55%] mx-auto mt-4 font-semibold">
@@ -223,7 +229,7 @@
                             </ul>
                         </div>
                         <div class="md:text-sm">
-                            <h1 class="bg-ashWhite p-6 w-[90%] text-4xl text-center mx-auto rounded-[20px] text-fpiGreen font-bold">
+                            <h1 class="bg-fpiGreen p-4 w-[90%] text-4xl text-center mx-auto text-white font-bold">
                                 Quick Links
                             </h1>
                             <ul class="list-disc w-[55%] mx-auto mt-4 font-semibold text-fpiGreen">
@@ -248,8 +254,89 @@
                 </div>
             </div>
         </section>
+        <section id="volumes" class="mt-10 px-6 md:px-12 lg:px-24">
+            <div>
+                <div class="flex justify-between mb-10">
+                    <h1 class="text-3xl font-bold">Articles</h1>
+                    <p class="text-fpiGreen text-xl font-bold">
+                        <a href="">
+                            See All
+                        </a>
+                    </p>
+                </div>
+                <div class="slider">
+                    <div class="slides flex">
+                        <!-- radio button start -->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <!-- radio button end -->
+                        <!-- card-slide start -->
+                        <div class="slide first flex flex-col items-center">
+                            <img src="./images/Rectangle 15.png" alt="" class="">
+                            <div class="">
+                                <h1 class="text-2xl font-bold">
+                                    Volume 1
+                                </h1>
+                                <p class="text-lg tracking-wide">
+                                    02 April, 2024.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide flex flex-col items-center">
+                            <img src="./images/Rectangle 15.png" alt="" class="">
+                            <div class="">
+                                <h1 class="text-2xl font-bold">
+                                    Volume 1
+                                </h1>
+                                <p class="text-lg tracking-wide">
+                                    02 April, 2024.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide first flex flex-col items-center">
+                            <img src="./images/Rectangle 15.png" alt="" class="">
+                            <div class="">
+                                <h1 class="text-2xl font-bold">
+                                    Volume 1
+                                </h1>
+                                <p class="text-lg tracking-wide">
+                                    02 April, 2024.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- card-slide end -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-footerGreen mt-24 px-6 py-12 md:px-12 lg:px-24">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+               <div class="flex items-center gap-4">
+                    <div class="bg-white rounded-full p-2 w-[5em] ">
+                        <img src="./images/federalPolyLogo 1.png" alt="" class="w-[5em]">
+                    </div>
+                    <p class="text-white w-[40%] md:w-[50%]">
+                        International Journal For Engineering
+                    </p>
+               </div>
+                <div class="text-center">
+                    <p class="text-white">
+                        Copyright (c) 2024. All right reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
     </main>
 
-    <script src="main.js"></script>
+   
 </body>
+
+<!-- swiper script -->
+
+    <script src="script/swiper-bundle.min.js"></script>
+
+<!-- JS -->
+    <script src="main.js"></script>
 </html>

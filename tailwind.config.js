@@ -10,10 +10,12 @@ module.exports = {
     },
     extend: {
       colors:{
-        fpiGreen: '#309229',
+        fpiGreen: '#1E8449',
+        footerGreen: '#145A32',
         veryLightGray: 'hsl(0, 0%, 98%)',
         darkGrayishBlue: 'hsl(227, 12%, 61%)',
         ashWhite: '#E5E7E9',
+        articleColor: 'hsl(204, 51%, 95%)',
       }
     },
     container:{
