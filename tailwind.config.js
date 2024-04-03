@@ -16,6 +16,7 @@ module.exports = {
         darkGrayishBlue: 'hsl(227, 12%, 61%)',
         ashWhite: '#E5E7E9',
         articleColor: 'hsl(204, 51%, 95%)',
+        myGold: '#F1C40F ',
       }
     },
     container:{
