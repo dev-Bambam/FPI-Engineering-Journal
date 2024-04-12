@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor's page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="container max-w-3xl md:max-w-[100%]">
+    <header class="relative px-6 md:px-12 lg:px-24 bg-articleColor w-full pt-[3rem] pb-[6rem]">
+        <div class="absolute -left-20 -top-28 h-full">
+            <div class="bg-myGold rounded-full blur-[100px] w-[20rem] h-[20rem] md:w-[27rem] md:h-[27rem]"></div>
+        </div>
+        <nav class="mt- flex relative items-center justify-between">
+            <div class="w-[20em]">
+                <img src="./images/LOGO.svg" alt="" class="lg:w-[15em]">
+            </div>
+
+            <div class="hidden text-center absolute bg-white py-16 w-full shadow-lg top-16 z-10" id="nav-menu">
+                <ul class="font-bold space-y-5">
+                    <li>
+                        <a href="index.html" class="hover:text-fpiGreen">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="hover:text-fpiGreen ">About</a>
+                    </li>
+                    <li>
+                        <a href="author.html" class="hover:text-fpiGreen">Author's Guide</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-fpiGreen">Articles</a>
+                    </li>
+                    <li>
+                        <a href="editor.html" class="hover:text-fpiGreen">Editors</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-fpiGreen">Announcement</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-fpiGreen">Contact</a>
+                    </li>
+                </ul>
+                <div class="md:hidden">
+                    <button class="border mt-8 border-fpiGreen p-2 rounded-full px-4 font-bold text-fpiGreen hover:text-white hover:bg-fpiGreen">
+                        Send Manuscript
+                    </button>
+                </div>
+            </div>
+
+            <!-- medium screen nav -->
+
+            <ul class="font-bold hidden items-center md:flex gap-4 text-sm">
+                <li>
+                    <a href="index.html" class="hover:text-fpiGreen">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="hover:text-fpiGreen">About</a>
+                </li>
+                <li>
+                    <a href="author.html" class="hover:text-myGold text-fpiGreen">Author's Guide</a>
+                </li>
+                <li>
+                    <a href="" class="hover:text-fpiGreen">Articles</a>
+                </li>
+                <li>
+                    <a href="editor.html" class="hover:text-fpiGreen">Editors</a>
+                </li>
+                <li>
+                    <a href="" class="hover:text-fpiGreen">Announcement</a>
+                </li>
+                <li>
+                    <a href="" class="hover:text-fpiGreen">Contact</a>
+                </li>
+            </ul>
+
+            <div class="hidden lg:block">
+                <button class="bg-white border border-fpiGreen p-2 rounded-full px-4 font-bold text-fpiGreen hover:text-white hover:bg-fpiGreen 
+                lg:px-4">
+                    Send Manuscript
+                </button>
+            </div>
+            
+            <div class="md:hidden">
+                <img src="./images/icon-menu.svg" alt="" id="hamburger">
+                <img src="./images/icon-close-menu.svg" alt="" class="hidden" id="close">
+            </div>
+        </nav>
+
+        <div class="mt-[10em]">
+            <div class="text-center">
+                <h3 class="text-4xl font-bold">
+                    Editor's
+                </h3>
+                <p class="text-2xl">
+                    <a href="index.html">Home</a>><a href="about.html" class="text-fpiGreen">Editor</a>
+                </p>
+            </div>
+        </div>
+    </header>
+    
+</body>
+</html>
